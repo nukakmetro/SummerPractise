@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.mypractics.MainFragment"
+        tools:layout="@layout/fragment_main"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_sixthElementFragment"
+            app:destination="@id/sixthElementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mypractics.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_sixthElementFragment"
+            app:destination="@id/sixthElementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mypractics.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_sixthElementFragment"
+            app:destination="@id/sixthElementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.mypractics.RegistrationFragment"
+        android:label="RegistrationFragment"
+        tools:layout="@layout/fragment_regisration">
+        <action
+            android:id="@+id/action_registrationFragment_to_sixthElementFragment"
+            app:destination="@id/sixthElementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musicFragment2"
+        android:name="com.example.mypractics.MusicFragment"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" >
+        <action
+            android:id="@+id/action_musicFragment2_to_sixthElementFragment"
+            app:destination="@id/sixthElementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sixthElementFragment"
+        android:name="com.example.mypractics.SixthElementFragment"
+        android:label="fragment_sixth_element"
+        tools:layout="@layout/fragment_sixth_element" >
+        <action
+            android:id="@+id/action_sixthElementFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_sixthElementFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_sixthElementFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_sixthElementFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_sixthElementFragment_to_musicFragment2"
+            app:destination="@id/musicFragment2" />
+    </fragment>
+</navigation>

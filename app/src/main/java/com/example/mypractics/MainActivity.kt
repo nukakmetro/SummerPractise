@@ -9,12 +9,21 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.view.isInvisible
+import com.example.mypractics.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private var clickButton: Button? = null
+
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        val newBinding = ActivityMainBinding.inflate(layoutInflater)
+        binding = newBinding
+        setContentView(newBinding.root)
+
+        binding.button.setOnClickListener{
+
+        }
         var name = ""
         var height = 0
         var weight = 0
@@ -110,6 +119,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding 
     }
 
 
