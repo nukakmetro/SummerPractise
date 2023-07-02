@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/registrationFragment"
+        android:icon="@drawable/baseline_drive_file_rename_outline_24"
+        android:title="registration" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="settings" />
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="main" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/baseline_person_outline_24"
+        android:title="profile" />
+    <item
+        android:id="@+id/musicFragment2"
+        android:icon="@drawable/baseline_music_note_24"
+        android:title="music"/>
+
+</menu>
